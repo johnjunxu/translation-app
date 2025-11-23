@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapTranslate</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SnapTranslate</h1>
+    <div class="container">
+        <p class="status" id="status">Enter text below to translate</p>
+
+        <div class="input-area">
+            <textarea id="textInput" placeholder="Enter text here..."></textarea>
+            <button id="translateButton">Translate</button>
+        </div>
+
+        <div class="text-areas">
+            <div class="text-box">
+                <h2>Original Text</h2>
+                <p id="originalText">...</p>
+            </div>
+            <div class="text-box">
+                <h2>Translated Text</h2>
+                <p id="translatedText">...</p>
+                <button id="copyButton">COPY TEXT</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <label class="switch">
+                <input type="checkbox" id="speakToggle">
+                <span class="slider round"></span>
+            </label>
+            <label for="speakToggle">Speak translation</label>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 SnapTranslate · v1.0 · Developer: JOHN</p>
+        <p>Updated on: 2025-11-18 · Support: john.junx@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
