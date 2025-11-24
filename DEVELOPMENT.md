@@ -1,21 +1,35 @@
-# SnapTranslate
+# Development Guide for SnapTranslate
 
-A simple, clean, and responsive translation web application.
+This guide provides instructions for setting up your development environment,
+understanding the project structure, and contributing to SnapTranslate.
 
-## Features
+## Project Structure
 
--   **Auto Language Detection**: Automatically detects if the input text is Chinese or English and translates to the other.
--   **Text-to-Speech**: Reads the translated text aloud.
--   **Copy to Clipboard**: Easily copy the translated text.
--   **Responsive Design**: Looks great on both desktop and mobile devices.
+```
+.
+├── .gitignore          # Specifies intentionally untracked files to ignore
+├── CHANGELOG.md        # Documents notable changes for each version
+├── DEVELOPMENT.md      # This development guide
+├── DEVELOPMENT.zh-CN.md# This development guide (Chinese)
+├── Dockerfile          # Defines how to build the Docker image
+├── index.html          # Main HTML file for the frontend
+├── package.json        # Node.js project metadata and dependencies
+├── package-lock.json   # Records the exact dependency tree
+├── README.md           # Project overview and usage instructions
+├── README.zh-CN.md     # Project overview and usage instructions (Chinese)
+├── script.js           # Frontend JavaScript logic
+├── server.js           # Backend Node.js/Express server
+└── style.css           # Frontend CSS styles
+```
 
-## Tech Stack
+## Local Development Setup
 
--   **Frontend**: HTML, CSS, JavaScript
--   **Backend**: Node.js, Express
--   **Translation API**: MyMemory API
+### Prerequisites
 
-## How to Run Locally
+-   Node.js (LTS version recommended)
+-   npm (Node Package Manager)
+
+### Steps
 
 1.  **Clone the repository:**
     ```bash
